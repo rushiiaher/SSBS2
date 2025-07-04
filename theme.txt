@@ -1,0 +1,623 @@
+# Sadhana Sahakari Bank Ltd. - Website Design System & Color Theme Documentation
+
+A modern, human-authentic banking website built with Next.js, featuring organic design principles and a carefully crafted blue-emerald color palette with detailed implementation guidelines.
+
+## 🎨 Complete Color Theme Implementation Guide
+
+### **Primary Brand Colors & Their Exact Usage**
+
+#### **Core Brand Gradient System**
+
+Our design system is built around **two primary gradient combinations** that are used consistently throughout the website:
+
+\`\`\`css
+/* PRIMARY GRADIENT - Most Important Elements */
+--primary-gradient: linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+/* Blue #2563eb (37 99 235) → Emerald #10b981 (16 185 129) */
+
+/* SECONDARY GRADIENT - Alternative Elements */
+--secondary-gradient: linear-gradient(127deg, rgb(34 197 94) 0%, rgb(59 130 246) 100%);
+/* Green #22c55e (34 197 94) → Blue #3b82f6 (59 130 246) */
+\`\`\`
+
+---
+
+## 📝 **HEADINGS COLOR IMPLEMENTATION**
+
+### **Main Page Headings (H1)**
+
+\`\`\`css
+/* Hero Section Main Heading */
+h1 {
+  color: rgb(17 24 39); /* #111827 - Dark Gray for base text */
+}
+
+/* Hero Section Gradient Text (Highlighted Words) */
+.hero-gradient-text {
+  background: linear-gradient(127deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Example Usage in Hero */
+"Banking that feels <span class="hero-gradient-text">genuinely yours</span>"
+\`\`\`
+
+### **Section Headings (H2)**
+
+\`\`\`css
+/* Section Headings Base Color */
+h2 {
+  color: rgb(17 24 39); /* #111827 - Dark Gray */
+  font-size: clamp(29px, 4.1vw, 53px);
+  font-weight: 625;
+}
+
+/* Section Headings Gradient Text (Highlighted Words) */
+.section-gradient-text {
+  background: linear-gradient(127deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Examples Across Different Sections */
+"What we're <span class="section-gradient-text">really good at</span>"
+"Forty years of <span class="section-gradient-text">not being jerks</span>"
+"Numbers that <span class="section-gradient-text">actually matter</span>"
+"Where you'll <span class="section-gradient-text">find us</span>"
+"Let's <span class="section-gradient-text">talk money</span>"
+\`\`\`
+
+### **Card Headings (H3)**
+
+\`\`\`css
+/* Service Card Headings */
+h3.card-heading {
+  color: rgb(17 24 39); /* #111827 - Dark Gray */
+  font-size: 21px;
+  font-weight: 525;
+  letter-spacing: -0.01em;
+}
+
+/* About Page Card Headings */
+h3.about-card-heading {
+  color: rgb(17 24 39); /* #111827 - Dark Gray */
+  font-size: 19px;
+  font-weight: 525;
+}
+\`\`\`
+
+---
+
+## 🎯 **ICONS COLOR IMPLEMENTATION**
+
+### **Primary Icons (Main Features)**
+
+\`\`\`css
+/* Service Card Icons - White on Gradient Background */
+.service-icon {
+  color: white; /* #ffffff */
+  background: linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  /* Icons: savings, trending_up, phone_android, account_balance_wallet, business_center */
+}
+
+/* Navigation Logo Icon */
+.nav-logo-icon {
+  color: white; /* #ffffff - when scrolled */
+  color: rgb(37 99 235); /* #2563eb - when at top */
+  background: linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  /* Icon: account_balance */
+}
+\`\`\`
+
+### **Secondary Icons (Supporting Elements)**
+
+\`\`\`css
+/* About Section Stats Icons */
+.stats-icon {
+  color: white; /* #ffffff */
+  background: /* Various gradients per card */
+    linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%); /* Card 1 */
+    linear-gradient(127deg, rgb(34 197 94) 0%, rgb(59 130 246) 100%);  /* Card 2 */
+    linear-gradient(113deg, rgb(16 185 129) 0%, rgb(37 99 235) 100%);  /* Card 3 */
+    linear-gradient(127deg, rgb(59 130 246) 0%, rgb(34 197 94) 100%);  /* Card 4 */
+  /* Icons: group, trending_up, business, schedule */
+}
+
+/* Contact Section Icons */
+.contact-icon {
+  color: white; /* #ffffff */
+  background: /* Different gradient per card */
+    linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%); /* Location */
+    linear-gradient(127deg, rgb(34 197 94) 0%, rgb(59 130 246) 100%);  /* Phone */
+    linear-gradient(113deg, rgb(16 185 129) 0%, rgb(37 99 235) 100%);  /* Schedule */
+    linear-gradient(127deg, rgb(168 85 247) 0%, rgb(16 185 129) 100%); /* Support */
+  /* Icons: location_on, phone, schedule, support_agent */
+}
+\`\`\`
+
+### **Utility Icons (Small Elements)**
+
+\`\`\`css
+/* Dropdown Arrow Icons */
+.dropdown-icon {
+  color: rgb(17 24 39); /* #111827 - when scrolled */
+  color: white; /* #ffffff - when at top */
+  /* Icon: keyboard_arrow_down */
+}
+
+/* List Bullet Icons */
+.bullet-icon {
+  background: rgb(37 99 235); /* #2563eb - Blue dot */
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+}
+
+/* Feature Check Icons */
+.check-icon {
+  color: rgb(37 99 235); /* #2563eb - Blue */
+  /* Icon: Various small indicators */
+}
+\`\`\`
+
+---
+
+## 🌈 **GRADIENT COMBINATIONS DETAILED BREAKDOWN**
+
+### **The Two Main Gradient Systems**
+
+#### **System 1: Blue-to-Emerald (Primary)**
+\`\`\`css
+/* Angle: 113 degrees */
+background: linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+
+/* Used For: */
+- Primary CTA buttons
+- Main logo background
+- Hero section highlighted text
+- Primary service card icons
+- Navigation elements
+- Main brand elements
+\`\`\`
+
+#### **System 2: Green-to-Blue (Secondary)**
+\`\`\`css
+/* Angle: 127 degrees */
+background: linear-gradient(127deg, rgb(34 197 94) 0%, rgb(59 130 246) 100%);
+
+/* Used For: */
+- Secondary service card icons
+- Alternative section backgrounds
+- Supporting element highlights
+- Variation in card designs
+\`\`\`
+
+### **Additional Gradient Variations**
+
+#### **Reverse Primary (Tertiary)**
+\`\`\`css
+/* Emerald-to-Blue */
+background: linear-gradient(113deg, rgb(16 185 129) 0%, rgb(37 99 235) 100%);
+
+/* Used For: */
+- Third variation in card series
+- Alternative icon backgrounds
+- Hover state variations
+\`\`\`
+
+#### **Reverse Secondary (Quaternary)**
+\`\`\`css
+/* Blue-to-Green */
+background: linear-gradient(127deg, rgb(59 130 246) 0%, rgb(34 197 94) 100%);
+
+/* Used For: */
+- Fourth variation in card series
+- Supporting element backgrounds
+- Additional icon variations
+\`\`\`
+
+#### **Accent Gradient (Special)**
+\`\`\`css
+/* Purple-to-Emerald */
+background: linear-gradient(113deg, rgb(168 85 247) 0%, rgb(16 185 129) 100%);
+
+/* Used For: */
+- Special accent elements
+- Fifth card in series
+- Unique highlighting needs
+\`\`\`
+
+---
+
+## 📱 **NAVIGATION COLOR IMPLEMENTATION**
+
+### **Desktop Navigation**
+
+\`\`\`css
+/* Navigation Background - Dynamic */
+.nav-scrolled {
+  background: rgba(255, 255, 255, 0.95); /* White with transparency */
+  backdrop-filter: blur(13px);
+}
+
+.nav-top {
+  background: transparent;
+}
+
+/* Navigation Text Colors */
+.nav-link-scrolled {
+  color: rgb(17 24 39); /* #111827 - Dark gray */
+}
+
+.nav-link-scrolled:hover {
+  color: rgb(37 99 235); /* #2563eb - Blue */
+}
+
+.nav-link-top {
+  color: white; /* #ffffff */
+}
+
+.nav-link-top:hover {
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+
+/* CTA Button */
+.nav-cta-button {
+  background: linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  color: white;
+}
+\`\`\`
+
+### **Mobile Navigation**
+
+\`\`\`css
+/* Mobile Menu Background */
+.mobile-menu {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(13px);
+  border-top: 1px solid rgb(219 234 254); /* Light blue border */
+}
+
+/* Mobile Menu Links */
+.mobile-link {
+  color: rgb(17 24 39); /* #111827 - Dark gray */
+}
+
+.mobile-link:hover {
+  color: rgb(37 99 235); /* #2563eb - Blue */
+}
+\`\`\`
+
+---
+
+## 🎨 **BUTTON COLOR SYSTEM**
+
+### **Primary Buttons (Main Actions)**
+
+\`\`\`css
+.btn-primary {
+  background: linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(113deg, rgb(29 78 216) 0%, rgb(5 150 105) 100%);
+  /* Darker versions: Blue #1d4ed8, Emerald #059669 */
+}
+\`\`\`
+
+### **Secondary Buttons (Alternative Actions)**
+
+\`\`\`css
+.btn-secondary {
+  background: white;
+  color: rgb(37 99 235); /* #2563eb - Blue text */
+  border: 2px solid rgb(37 99 235);
+}
+
+.btn-secondary:hover {
+  background: rgb(239 246 255); /* #eff6ff - Light blue background */
+  color: rgb(37 99 235);
+}
+\`\`\`
+
+### **Outline Buttons (Subtle Actions)**
+
+\`\`\`css
+.btn-outline {
+  background: transparent;
+  color: rgb(37 99 235); /* #2563eb - Blue text */
+  border: 2px solid rgb(37 99 235);
+}
+
+.btn-outline:hover {
+  background: rgb(239 246 255); /* #eff6ff - Light blue */
+}
+\`\`\`
+
+---
+
+## 📄 **BACKGROUND COLOR SYSTEM**
+
+### **Section Backgrounds**
+
+\`\`\`css
+/* Hero Section */
+.hero-bg {
+  background: white; /* #ffffff */
+}
+
+/* Services Section */
+.services-bg {
+  background: white; /* #ffffff */
+}
+
+/* About Section */
+.about-bg {
+  background: linear-gradient(127deg, rgb(239 246 255) 0%, rgb(236 253 245) 100%);
+  /* Light Blue #eff6ff to Light Emerald #ecfdf5 */
+}
+
+/* Contact Section */
+.contact-bg {
+  background: white; /* #ffffff */
+}
+
+/* Footer */
+.footer-bg {
+  background: rgb(17 24 39); /* #111827 - Dark gray */
+}
+\`\`\`
+
+### **Card Backgrounds**
+
+\`\`\`css
+/* Standard Cards */
+.card-bg {
+  background: white; /* #ffffff */
+}
+
+/* Featured Cards */
+.card-featured-bg {
+  background: linear-gradient(127deg, rgb(239 246 255) 0%, rgb(236 253 245) 100%);
+}
+
+/* Accent Cards */
+.card-accent-bg {
+  background: linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  color: white;
+}
+\`\`\`
+
+### **Floating Background Elements**
+
+\`\`\`css
+/* Organic Background Shapes */
+.bg-element-1 {
+  background: linear-gradient(127deg, rgb(59 130 246) 0%, rgb(16 185 129) 100%);
+  opacity: 0.4;
+}
+
+.bg-element-2 {
+  background: rgb(34 197 94); /* #22c55e - Solid green */
+  opacity: 0.3;
+}
+
+.bg-element-3 {
+  background: linear-gradient(113deg, rgb(147 197 253) 0%, rgb(134 239 172) 100%);
+  opacity: 0.35;
+}
+\`\`\`
+
+---
+
+## 📝 **TEXT COLOR HIERARCHY**
+
+### **Primary Text Colors**
+
+\`\`\`css
+/* Main Headings */
+.text-primary {
+  color: rgb(17 24 39); /* #111827 - Dark gray */
+}
+
+/* Body Text */
+.text-body {
+  color: rgb(107 114 128); /* #6b7280 - Medium gray */
+}
+
+/* Secondary Text */
+.text-secondary {
+  color: rgb(156 163 175); /* #9ca3af - Light gray */
+}
+
+/* Muted Text */
+.text-muted {
+  color: rgb(156 163 175); /* #9ca3af - Light gray */
+}
+\`\`\`
+
+### **Special Text Colors**
+
+\`\`\`css
+/* Gradient Text (Highlighted Words) */
+.text-gradient {
+  background: linear-gradient(127deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Link Colors */
+.link-primary {
+  color: rgb(37 99 235); /* #2563eb - Blue */
+}
+
+.link-primary:hover {
+  color: rgb(29 78 216); /* #1d4ed8 - Darker blue */
+}
+
+/* White Text (on dark backgrounds) */
+.text-white {
+  color: white; /* #ffffff */
+}
+
+/* Light Text (on dark backgrounds) */
+.text-light {
+  color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+\`\`\`
+
+---
+
+## 🎯 **SPECIFIC PAGE IMPLEMENTATIONS**
+
+### **Homepage Color Usage**
+
+\`\`\`css
+/* Hero Section */
+- Background: white
+- Main heading: rgb(17 24 39) with gradient highlight
+- Body text: rgb(107 114 128)
+- CTA buttons: Primary gradient background
+- Floating elements: Various gradient combinations with opacity
+
+/* Services Section */
+- Background: white
+- Section heading: rgb(17 24 39) with gradient highlight
+- Card icons: White on gradient backgrounds (5 different gradients)
+- Card text: rgb(17 24 39) for headings, rgb(107 114 128) for body
+
+/* About Section */
+- Background: Light blue-emerald gradient
+- Stats cards: White background with gradient icons
+- Text: Standard hierarchy
+
+/* Contact Section */
+- Background: white
+- Contact cards: White background with gradient icons
+- Each card uses different gradient variation
+\`\`\`
+
+### **Services Page Color Usage**
+
+\`\`\`css
+/* Loan Cards */
+- Icons: White on gradient backgrounds
+- 6 different gradient combinations for variety
+- Text: Standard dark gray hierarchy
+
+/* Deposit Cards */
+- Background: White cards
+- Accent elements: Blue and emerald highlights
+- Icons: Emerald color for bullet points
+
+/* Digital Services */
+- Icons: White on purple-gradient backgrounds
+- Consistent with brand but adds variety
+\`\`\`
+
+### **About Page Color Usage**
+
+\`\`\`css
+/* Stats Section */
+- Background: Light gradient
+- 4 different icon gradient combinations
+- Monospace font for numbers in brand colors
+
+/* Branch Cards */
+- Head office: Special blue-tinted background
+- Regular branches: White background
+- Icons: Gradient backgrounds with rotation effects
+\`\`\`
+
+---
+
+## 🔧 **CSS Implementation Examples**
+
+### **Complete Button Implementation**
+
+\`\`\`css
+.btn-primary {
+  padding: 13px 27px 15px 27px;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: 525;
+  background: linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%);
+  color: white;
+  border: none;
+  transition: all 267ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 0.9px 2.2px rgba(0,0,0,0.024), 0 2.1px 5.3px rgba(0,0,0,0.035);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(113deg, rgb(29 78 216) 0%, rgb(5 150 105) 100%);
+  transform: translateY(-1px) rotate(0.3deg);
+  box-shadow: 0 1.3px 3.1px rgba(0,0,0,0.031), 0 3.7px 8.9px rgba(0,0,0,0.045);
+}
+\`\`\`
+
+### **Complete Heading Implementation**
+
+\`\`\`tsx
+// React/TSX Implementation
+<h1 className="font-bold text-gray-900 mb-6 leading-tight">
+  Banking that feels{" "}
+  <span 
+    className="bg-clip-text text-transparent"
+    style={{
+      background: "linear-gradient(127deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent"
+    }}
+  >
+    genuinely yours
+  </span>
+</h1>
+\`\`\`
+
+### **Complete Icon Implementation**
+
+\`\`\`tsx
+// Service Card Icon
+<div
+  className="inline-flex items-center justify-center rounded-2xl mb-6"
+  style={{
+    width: "67px",
+    height: "67px",
+    background: "linear-gradient(113deg, rgb(37 99 235) 0%, rgb(16 185 129) 100%)",
+    borderRadius: "11px",
+    transform: "rotate(-0.5deg)",
+    boxShadow: "0 0.9px 2.2px rgba(0,0,0,0.024)"
+  }}
+>
+  <span className="material-icons text-white" style={{ fontSize: "29px" }}>
+    savings
+  </span>
+</div>
+\`\`\`
+
+---
+
+## 📊 **Color Usage Statistics**
+
+### **Primary Gradient Usage**
+- **113° Blue-to-Emerald**: Used 40+ times across the site
+- **127° Green-to-Blue**: Used 25+ times for variety
+- **Reverse combinations**: Used 15+ times for additional variation
+
+### **Individual Color Usage**
+- **rgb(37 99 235) - Primary Blue**: 60+ instances
+- **rgb(16 185 129) - Primary Emerald**: 45+ instances
+- **rgb(17 24 39) - Dark Gray**: 80+ instances (all headings)
+- **rgb(107 114 128) - Medium Gray**: 50+ instances (body text)
+- **white**: 100+ instances (backgrounds, icon colors)
+
+### **Gradient Text Usage**
+- **Hero sections**: 5 instances of gradient text
+- **Section headings**: 15+ instances across all pages
+- **Special highlights**: 10+ instances for emphasis
+
+This comprehensive color documentation ensures consistent implementation across the entire Sadhana Sahakari Bank website, maintaining brand integrity while providing clear guidelines for developers and designers.

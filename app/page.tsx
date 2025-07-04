@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform, useInView } from "framer-motion"
 import Navigation from "@/components/navigation"
+import InfinitySlider from "@/components/InfinitySlider"
 import Image from "next/image"
 
 export default function HomePage() {
@@ -22,6 +23,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white relative noise-overlay">
       <Navigation />
+      <InfinitySlider />
 
       {/* Hero Section */}
       <section

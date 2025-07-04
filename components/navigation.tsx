@@ -64,7 +64,7 @@ export default function Navigation() {
             transition={{ duration: 0.267, ease: [0.43, 0.195, 0.02, 1.01] }}
             className="flex items-center space-x-3 cursor-pointer"
           >
-            <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16">
+            <div className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16">
               <Image
                 src="/imgs/logo.jpg"
                 alt="Sadhana Sahakari Bank Logo"
@@ -73,8 +73,8 @@ export default function Navigation() {
                 className="rounded-lg"
               />
             </div>
-            <div className="hidden sm:block">
-              <div className="font-bold text-black text-base sm:text-lg">
+            <div className="block">
+              <div className="font-bold text-black text-xs sm:text-lg">
                 SSB Ltd
               </div>
               <div className="text-slate-600 text-xs">
@@ -179,8 +179,7 @@ export default function Navigation() {
                       />
                     </div>
                     <div>
-                      <div className="font-bold text-black text-lg">SSB Ltd</div>
-                      <div className="text-slate-600 text-xs">Since 1984</div>
+                      <div className="font-bold text-black text-lg">SSB Ltd Since 1984</div>
                     </div>
                   </div>
                   <button

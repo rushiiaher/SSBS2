@@ -34,42 +34,9 @@ export default function GalleryPage() {
         minHeight: "91vh",
         paddingTop: "127px",
         paddingBottom: "89px",
+        background:"white"
       }}>
-        <div className="absolute inset-0 overflow-hidden">
-          <div
-            className="absolute rounded-full opacity-30"
-            style={{
-              top: "89px",
-              left: "43px",
-              width: "134px",
-              height: "134px",
-              background: "linear-gradient(127deg, #0ea5e9 0%, #0ea5e9 100%)",
-              transform: "rotate(-11deg)",
-            }}
-          />
-          <div
-            className="absolute opacity-25 organic-shape-1"
-            style={{
-              top: "267px",
-              right: "67px",
-              width: "89px",
-              height: "89px",
-              background: "#0ea5e9",
-              transform: "rotate(17deg)",
-            }}
-          />
-          <div
-            className="absolute rounded-full opacity-20"
-            style={{
-              bottom: "123px",
-              left: "29%",
-              width: "156px",
-              height: "156px",
-              background: "linear-gradient(113deg, #0ea5e9 0%, #0ea5e9 100%)",
-              transform: "rotate(-7deg)",
-            }}
-          />
-        </div>
+        
 
         <div className="container mx-auto relative z-10" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
           <motion.div
@@ -109,7 +76,7 @@ export default function GalleryPage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -136,7 +103,7 @@ export default function GalleryPage() {
       <section ref={galleryRef} className="relative overflow-hidden" style={{
         paddingTop: "73px",
         paddingBottom: "89px",
-        background: "linear-gradient(127deg, #0ea5e9 0%, #0ea5e9 100%)",
+        background: "f8f8f8",
       }}>
         <div className="container mx-auto" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
           <motion.div
@@ -159,7 +126,7 @@ export default function GalleryPage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}

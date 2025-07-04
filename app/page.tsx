@@ -33,38 +33,7 @@ export default function HomePage() {
           paddingBottom: "73px",
         }}
       >
-        <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            style={{
-              y,
-              top: "127px",
-              left: "67px",
-              background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
-              transform: "rotate(-7deg)",
-            }}
-            className="absolute w-32 h-32 rounded-full opacity-40"
-          />
-          <motion.div
-            style={{
-              y: useTransform(scrollYProgress, [0, 1], ["0%", "-23%"]),
-              top: "234px",
-              right: "89px",
-              background: "#0ea5e9",
-              transform: "rotate(13deg)",
-            }}
-            className="absolute w-24 h-24 opacity-30 organic-shape-1"
-          />
-          <motion.div
-            className="absolute w-28 h-28 rounded-full opacity-35"
-            style={{
-              y: useTransform(scrollYProgress, [0, 1], ["0%", "43%"]),
-              bottom: "156px",
-              left: "23%",
-              background: "linear-gradient(113deg, #2563eb 0%, #0ea5e9 100%)",
-              transform: "rotate(-3deg)",
-            }}
-          />
-        </div>
+        
 
         <div className="container mx-auto relative z-10" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
           <motion.div
@@ -108,7 +77,7 @@ export default function HomePage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #10b981 0%, #2563eb 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -154,30 +123,7 @@ export default function HomePage() {
           paddingBottom: "71px",
         }}
       >
-        <div className="absolute inset-0 overflow-hidden">
-          <div
-            className="absolute rounded-full opacity-20"
-            style={{
-              top: "43px",
-              right: "89px",
-              width: "167px",
-              height: "167px",
-              background: "linear-gradient(127deg, #0ea5e9 0%, #0ea5e9 100%)",
-              transform: "rotate(23deg)",
-            }}
-          />
-          <div
-            className="absolute opacity-15 organic-shape-2"
-            style={{
-              bottom: "67px",
-              left: "43px",
-              width: "134px",
-              height: "134px",
-              background: "linear-gradient(113deg, #0ea5e9 0%, #0ea5e9 100%)",
-              transform: "rotate(-11deg)",
-            }}
-          />
-        </div>
+        
 
         <div className="container mx-auto relative z-10" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
           <motion.div
@@ -200,7 +146,7 @@ export default function HomePage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #10b981 0%, #2563eb 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -232,7 +178,7 @@ export default function HomePage() {
                 icon: "savings",
                 title: "Loans that make sense",
                 description: "Home, personal, auto, education, business - we'll find rates that don't make you wince",
-                color: "linear-gradient(113deg, #2563eb 0%, #1e293b 100%)",
+                color: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                 delay: 0,
               },
               {
@@ -240,14 +186,14 @@ export default function HomePage() {
                 title: "Deposits worth your time",
                 description:
                   "Fixed deposits with flexible terms. Monthly, quarterly, yearly - however you want your money back",
-                color: "linear-gradient(127deg, #0ea5e9 0%, #2563eb 100%)",
+                color: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                 delay: 67,
               },
               {
                 icon: "phone_android",
                 title: "Mobile banking that works",
                 description: "SSB Mbank app - manage multiple accounts, transfer money, actually get things done",
-                color: "linear-gradient(113deg, #1e293b 0%, #2563eb 100%)",
+                color: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                 delay: 134,
               },
               {
@@ -262,7 +208,7 @@ export default function HomePage() {
                 icon: "business_center",
                 title: "Business accounts that get it",
                 description: "Unlimited transactions, overdraft facilities, built for people who mean business",
-                color: "linear-gradient(113deg, #0ea5e9 0%, #1e293b 100%)",
+                color: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                 delay: 268,
               },
             ].map((service, index) => (
@@ -284,7 +230,7 @@ export default function HomePage() {
               >
                 <div className="p-8 text-center" style={{ padding: "23px 29px 25px 29px" }}>
                   <div className="mb-7">
-                    <span className="material-icons text-emerald-500" style={{ fontSize: "48px" }}>
+                    <span className="material-icons" style={{ fontSize: "48px", color: "#2563eb" }}>
                       {service.icon}
                     </span>
                   </div>
@@ -326,30 +272,7 @@ export default function HomePage() {
           background: "linear-gradient(127deg, #f8fafc 0%, #ffffff 100%)",
         }}
       >
-        <div className="absolute inset-0 overflow-hidden">
-          <div
-            className="absolute rounded-full opacity-15"
-            style={{
-              top: "89px",
-              left: "123px",
-              width: "267px",
-              height: "267px",
-              background: "linear-gradient(113deg, #0ea5e9 0%, #2563eb 100%)",
-              transform: "rotate(-13deg)",
-            }}
-          />
-          <div
-            className="absolute opacity-12 organic-shape-1"
-            style={{
-              bottom: "43px",
-              right: "67px",
-              width: "189px",
-              height: "189px",
-              background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
-              transform: "rotate(17deg)",
-            }}
-          />
-        </div>
+        
 
         <div className="container mx-auto relative z-10" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -402,11 +325,14 @@ export default function HomePage() {
                   }}
                 >
                   <div
-                    className="font-bold text-emerald-500 mb-2"
+                    className="font-bold mb-2 bg-clip-text text-transparent"
                     style={{
                       fontSize: "29px",
                       fontWeight: 725,
                       fontFamily: "var(--font-mono)",
+                      background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
                     }}
                   >
                     9,076+
@@ -429,11 +355,14 @@ export default function HomePage() {
                   }}
                 >
                   <div
-                    className="font-bold text-emerald-500 mb-2"
+                    className="font-bold mb-2 bg-clip-text text-transparent"
                     style={{
                       fontSize: "clamp(20px, 5vw, 29px)",
                       fontWeight: 725,
                       fontFamily: "var(--font-mono)",
+                      background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
                     }}
                   >
                     ₹409.96L
@@ -667,7 +596,7 @@ export default function HomePage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}

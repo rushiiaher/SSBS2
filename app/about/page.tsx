@@ -20,19 +20,19 @@ export default function AboutPage() {
       icon: "group",
       value: "9,076+",
       label: "People who trust us",
-      color: "linear-gradient(113deg, #2563eb 0%, #1e293b 100%)",
+      color: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
     },
     {
       icon: "trending_up",
       value: "₹409.96L",
       label: "In shared capital",
-      color: "linear-gradient(127deg, #0ea5e9 0%, #2563eb 100%)",
+      color: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
     },
     {
       icon: "business",
       value: "5",
       label: "Branches across Nagpur",
-      color: "linear-gradient(113deg, #1e293b 0%, #2563eb 100%)",
+      color: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
     },
     {
       icon: "schedule",
@@ -92,44 +92,11 @@ export default function AboutPage() {
           minHeight: "91vh",
           paddingTop: "127px",
           paddingBottom: "89px",
+          background :"white"
         }}
       >
         {/* Organic background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div
-            className="absolute rounded-full opacity-30"
-            style={{
-              top: "89px",
-              left: "43px",
-              width: "134px",
-              height: "134px",
-              background: "linear-gradient(127deg, #0ea5e9 0%, #0ea5e9 100%)",
-              transform: "rotate(-11deg)",
-            }}
-          />
-          <div
-            className="absolute opacity-25 organic-shape-1"
-            style={{
-              top: "267px",
-              right: "67px",
-              width: "89px",
-              height: "89px",
-              background: "#0ea5e9",
-              transform: "rotate(17deg)",
-            }}
-          />
-          <div
-            className="absolute rounded-full opacity-20"
-            style={{
-              bottom: "123px",
-              left: "29%",
-              width: "156px",
-              height: "156px",
-              background: "linear-gradient(113deg, #0ea5e9 0%, #0ea5e9 100%)",
-              transform: "rotate(-7deg)",
-            }}
-          />
-        </div>
+        
 
         <div className="container mx-auto relative z-10" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
           <motion.div
@@ -153,7 +120,7 @@ export default function AboutPage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -194,19 +161,7 @@ export default function AboutPage() {
           paddingBottom: "73px",
         }}
       >
-        <div className="absolute inset-0 overflow-hidden">
-          <div
-            className="absolute rounded-full opacity-15"
-            style={{
-              top: "67px",
-              right: "89px",
-              width: "189px",
-              height: "189px",
-              background: "linear-gradient(127deg, #0ea5e9 0%, #0ea5e9 100%)",
-              transform: "rotate(23deg)",
-            }}
-          />
-        </div>
+        
 
         <div className="container mx-auto relative z-10" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
           <div className="grid lg:grid-cols-12 gap-16 items-center">
@@ -229,7 +184,7 @@ export default function AboutPage() {
                 <span
                   className="bg-clip-text text-transparent"
                   style={{
-                    background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                    background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                   }}
@@ -239,7 +194,7 @@ export default function AboutPage() {
               </h2>
               <div
                 className="space-y-7 leading-relaxed"
-                style={{ fontSize: "19px", lineHeight: 1.7, color: "#2563eb" }}
+                style={{ fontSize: "19px", lineHeight: 1.7 }}
               >
                 <p>
                   Sadhana Sahakari Bank Ltd. was established on <strong>March 16, 1984</strong> (yes, we remember the
@@ -268,7 +223,7 @@ export default function AboutPage() {
               <div
                 className="text-white relative overflow-hidden"
                 style={{
-                  background: "linear-gradient(113deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   padding: "37px 43px 39px 43px",
                   borderRadius: "19px",
                   transform: "rotate(-0.5deg)",
@@ -412,7 +367,8 @@ export default function AboutPage() {
         style={{
           paddingTop: "73px",
           paddingBottom: "89px",
-          background: "linear-gradient(127deg, #0ea5e9 0%, #0ea5e9 100%)",
+          background: "white",
+
         }}
       >
         <div className="container mx-auto" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
@@ -436,7 +392,7 @@ export default function AboutPage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -486,7 +442,7 @@ export default function AboutPage() {
                       className="material-icons" 
                       style={{ 
                         fontSize: "43px",
-                        background: stat.color,
+                        background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         backgroundClip: "text"
@@ -553,7 +509,7 @@ export default function AboutPage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -606,7 +562,7 @@ export default function AboutPage() {
                         className="material-icons" 
                         style={{ 
                           fontSize: "29px",
-                          background: "linear-gradient(113deg, #2563eb 0%, #1e293b 100%)",
+                          background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
                           backgroundClip: "text"
@@ -684,7 +640,7 @@ export default function AboutPage() {
         style={{
           paddingTop: "73px",
           paddingBottom: "89px",
-          background: "linear-gradient(113deg, #0ea5e9 0%, #0ea5e9 100%)",
+          background: "white",
         }}
       >
         <div className="container mx-auto" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
@@ -702,7 +658,7 @@ export default function AboutPage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
@@ -725,7 +681,7 @@ export default function AboutPage() {
                   className="material-icons" 
                   style={{ 
                     fontSize: "43px",
-                    background: "linear-gradient(113deg, #2563eb 0%, #1e293b 100%)",
+                    background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text"
@@ -770,7 +726,7 @@ export default function AboutPage() {
                   className="material-icons" 
                   style={{ 
                     fontSize: "43px",
-                    background: "linear-gradient(127deg, #0ea5e9 0%, #2563eb 100%)",
+                    background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text"
@@ -815,7 +771,7 @@ export default function AboutPage() {
                   className="material-icons" 
                   style={{ 
                     fontSize: "43px",
-                    background: "linear-gradient(113deg, #1e293b 0%, #2563eb 100%)",
+                    background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text"

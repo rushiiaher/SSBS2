@@ -205,32 +205,10 @@ export default function OrganizationPage() {
           minHeight: "60vh",
           paddingTop: "120px",
           paddingBottom: "80px",
+          background:"white"
         }}
       >
-        <div className="absolute inset-0 overflow-hidden">
-          <div
-            className="absolute rounded-full opacity-20"
-            style={{
-              top: "10%",
-              right: "10%",
-              width: "200px",
-              height: "200px",
-              background: "linear-gradient(127deg, #0ea5e9 0%, #2563eb 100%)",
-              transform: "rotate(45deg)",
-            }}
-          />
-          <div
-            className="absolute rounded-full opacity-15"
-            style={{
-              bottom: "20%",
-              left: "15%",
-              width: "150px",
-              height: "150px",
-              background: "linear-gradient(113deg, #0ea5e9 0%, #0ea5e9 100%)",
-              transform: "rotate(-30deg)",
-            }}
-          />
-        </div>
+        
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
@@ -239,16 +217,7 @@ export default function OrganizationPage() {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <motion.div
-              initial={{ scale: 0, rotate: -10 }}
-              animate={heroInView ? { scale: 1, rotate: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="mb-8"
-            >
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#2563eb] to-[#1e293b] rounded-2xl mb-6 shadow-lg">
-                <Users className="w-10 h-10 text-[#f8fafc]" />
-              </div>
-            </motion.div>
+            
 
             <h1
               className="font-bold text-slate-800 mb-6 leading-tight"
@@ -263,7 +232,7 @@ export default function OrganizationPage() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  background: "linear-gradient(127deg, #2563eb 0%, #1e293b 100%)",
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}

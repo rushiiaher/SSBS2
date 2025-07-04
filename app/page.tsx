@@ -269,7 +269,7 @@ export default function HomePage() {
         style={{
           paddingTop: "73px",
           paddingBottom: "67px",
-          background: "linear-gradient(127deg, #f8fafc 0%, #ffffff 100%)",
+          background: "white",
         }}
       >
         
@@ -579,6 +579,7 @@ export default function HomePage() {
         style={{
           paddingTop: "67px",
           paddingBottom: "71px",
+          background: "linear-gradient(113deg, #f8fafc 0%, #ffffff 100%)"
         }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: "1240px" }}>

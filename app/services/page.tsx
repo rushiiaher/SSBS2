@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, useInView } from "framer-motion"
-import { useRef, useEffect, useState } from "react"
+import { useRef, useEffect, useState, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import {
   CreditCard,
@@ -19,7 +19,7 @@ import {
 } from "lucide-react"
 import Navigation from "@/components/navigation"
 
-export default function ServicesPage() {
+function ServicesContent() {
   const heroRef = useRef(null)
   const loansRef = useRef(null)
   const depositsRef = useRef(null)
@@ -974,5 +974,13 @@ export default function ServicesPage() {
         </div>
       </section>
     </div>
+  )
+}
+
+export default function ServicesPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ServicesContent />
+    </Suspense>
   )
 }

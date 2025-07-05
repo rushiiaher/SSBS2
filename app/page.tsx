@@ -5,15 +5,27 @@ import { motion, useScroll, useTransform, useInView } from "framer-motion"
 import Navigation from "@/components/navigation"
 import InfinitySlider from "@/components/InfinitySlider"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
+import {
+  Home,
+  Car,
+  GraduationCap,
+  Briefcase,
+  Coins,
+  TrendingUp,
+} from "lucide-react"
 
 export default function HomePage() {
   const { scrollYProgress } = useScroll()
+  const router = useRouter()
   const heroRef = useRef(null)
+  const loansRef = useRef(null)
   const servicesRef = useRef(null)
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
 
   const heroInView = useInView(heroRef, { once: true })
+  const loansInView = useInView(loansRef, { once: true })
   const servicesInView = useInView(servicesRef, { once: true })
   const aboutInView = useInView(aboutRef, { once: true })
 
@@ -114,6 +126,118 @@ export default function HomePage() {
           <div className="arrow"></div>
           <div className="arrow"></div>
         </motion.div>
+      </section>
+
+      {/* Loans Section */}
+      <section
+        ref={loansRef}
+        className="bg-white relative overflow-hidden"
+        style={{
+          paddingTop: "67px",
+          paddingBottom: "71px",
+        }}
+      >
+        <div className="container mx-auto relative z-10" style={{ maxWidth: "1240px", paddingInline: "23px" }}>
+          <motion.div
+            initial={{ opacity: 0, y: 51 }}
+            animate={loansInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.517, ease: [0.34, 1.56, 0.64, 1] }}
+            className="text-center mb-19"
+            style={{ marginBottom: "67px" }}
+          >
+            <h2
+              className="font-bold text-slate-800 mb-7"
+              style={{
+                fontSize: "clamp(29px, 4.1vw, 53px)",
+                fontWeight: 625,
+                letterSpacing: "-0.018em",
+                lineHeight: 1.3,
+              }}
+            >
+              Low Rates, Fast Approval
+              <br />
+              Get the{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{
+                  background: "linear-gradient(127deg, #2563eb 0%, #0ea5e9 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Loan You Deserve
+              </span>
+            </h2>
+            <p
+              className="text-slate-800 max-w-2xl mx-auto font-bold"
+              style={{
+                fontSize: "19px",
+                lineHeight: 1.6,
+                letterSpacing: "0.003em",
+              }}
+            >
+              Pick. Click. Proceed.
+            </p>
+          </motion.div>
+
+          <div
+            className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8"
+            style={{
+              gap: "27px 34px",
+            }}
+          >
+            {[
+              { icon: Home, name: "Housing Loans", id: "housing" },
+              { icon: Car, name: "Vehicle Loans", id: "vehicle" },
+              { icon: GraduationCap, name: "Education Loans", id: "education" },
+              { icon: Briefcase, name: "Personal Loans", id: "personal" },
+              { icon: Coins, name: "Gold Loans", id: "gold" },
+              { icon: TrendingUp, name: "Business Loans", id: "business" },
+            ].map((loan, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 43 }}
+                animate={loansInView ? { opacity: 1, y: 0 } : {}}
+                transition={{
+                  duration: 0.517,
+                  delay: index * 0.067,
+                  ease: [0.43, 0.195, 0.02, 1.01],
+                }}
+                whileHover={{
+                  y: -3,
+                  rotate: index % 2 === 0 ? 0.3 : -0.3,
+                  transition: { duration: 0.267, ease: [0.34, 1.56, 0.64, 1] },
+                }}
+                className={`card-organic text-center cursor-pointer ${index === 1 ? "slightly-off-3" : ""} ${index === 3 ? "slightly-off-4" : ""}`}
+                onClick={() => router.push(`/services?loan=${loan.id}`)}
+              >
+                <div style={{ padding: "23px 29px 25px 29px" }}>
+                  <div className="mb-5">
+                    <loan.icon 
+                      className="text-black mx-auto" 
+                      style={{ 
+                        fontSize: "48px",
+                        width: "48px",
+                        height: "48px"
+                      }} 
+                    />
+                  </div>
+                  <h3
+                    className="font-bold text-slate-800"
+                    style={{
+                      fontSize: "17px",
+                      fontWeight: 525,
+                      letterSpacing: "-0.01em",
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {loan.name}
+                  </h3>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Services Section */}

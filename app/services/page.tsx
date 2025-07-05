@@ -1,7 +1,8 @@
 "use client"
 
 import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
+import { useRef, useEffect, useState } from "react"
+import { useSearchParams } from "next/navigation"
 import {
   CreditCard,
   TrendingUp,
@@ -31,42 +32,65 @@ export default function ServicesPage() {
   const accountsInView = useInView(accountsRef, { once: true })
   const digitalInView = useInView(digitalRef, { once: true })
 
+  const searchParams = useSearchParams()
+  const [highlightLoan, setHighlightLoan] = useState(null)
+
+  useEffect(() => {
+    const loanParam = searchParams.get('loan')
+    if (loanParam) {
+      setHighlightLoan(loanParam)
+      setTimeout(() => {
+        const element = document.getElementById(`loan-${loanParam}`)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }, 500)
+      setTimeout(() => setHighlightLoan(null), 2000)
+    }
+  }, [searchParams])
+
   const loanProducts = [
     {
       icon: Home,
       title: "Housing Loans",
       description: "Affordable home loans with competitive rates for general customers and women.",
       features: ["General & Women: 9-11%", "Repair/Renovation: 12.5%", "Flexible repayment options"],
+      id: "housing",
     },
     {
       icon: Car,
       title: "Vehicle Loans",
       description: "Finance your dream vehicle with attractive interest rates for all vehicle types.",
       features: ["Two-wheeler: 9%", "New four-wheeler: 9%", "Commercial vehicle: 11%"],
+      id: "vehicle",
     },
     {
       icon: GraduationCap,
       title: "Education Loans",
       description: "Invest in your future with our education loan schemes for higher studies.",
       features: ["General & Women: 11%", "Covers tuition expenses", "Student-friendly terms"],
+      id: "education",
     },
     {
       icon: Briefcase,
       title: "Personal Loans",
       description: "Meet your personal financial needs with flexible personal loan options.",
       features: ["Clean loan: 18%", "Salary deduction: 16%", "Secured personal: 12%"],
+      id: "personal",
     },
     {
       icon: Coins,
       title: "Gold Loans",
       description: "Get instant loans against your gold ornaments with attractive interest rates.",
       features: ["Interest rate: 8.5-9%", "Instant approval", "Safe custody"],
+      id: "gold",
     },
     {
       icon: TrendingUp,
       title: "Business Loans",
       description: "Comprehensive business financing solutions for your enterprise growth.",
       features: ["Cash Credit: 11-14%", "Term Loans: 11-14%", "SSI loans available"],
+      id: "business",
     },
   ]
 
@@ -271,7 +295,8 @@ export default function ServicesPage() {
                   rotate: index % 2 === 0 ? 0.3 : -0.3,
                   transition: { duration: 0.267, ease: [0.34, 1.56, 0.64, 1] },
                 }}
-                className={`card-organic h-full ${index === 1 ? "slightly-off-3" : ""} ${index === 3 ? "slightly-off-4" : ""}`}
+                id={`loan-${loan.id}`}
+                className={`card-organic h-full ${index === 1 ? "slightly-off-3" : ""} ${index === 3 ? "slightly-off-4" : ""} ${highlightLoan === loan.id ? 'animate-pulse shadow-2xl shadow-blue-500/50' : ''}`}
               >
                 <div className="text-center h-full flex flex-col" style={{ padding: "23px 29px 25px 29px" }}>
                   <div className="mb-7">

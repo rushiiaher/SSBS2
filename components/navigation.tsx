@@ -64,20 +64,23 @@ export default function Navigation() {
             transition={{ duration: 0.267, ease: [0.43, 0.195, 0.02, 1.01] }}
             className="flex items-center space-x-3 cursor-pointer"
           >
-            <div className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16">
+            <div className="flex items-center justify-center w-16 h-16 sm:w-18 sm:h-18">
               <Image
                 src="/imgs/logo.jpg"
                 alt="Sadhana Sahakari Bank Logo"
-                width={64}
-                height={64}
+                width={72}
+                height={72}
                 className="rounded-lg"
               />
             </div>
-            <div className="block">
-              <div className="font-bold text-black text-xs sm:text-lg">
-                SSB Ltd
+            <div className="block max-w-[200px]">
+              <div className="font-bold text-black text-xs sm:text-sm leading-none tracking-tight">
+                SADHANA SAHAKARI
               </div>
-              <div className="text-slate-600 text-xs">
+              <div className="font-bold text-black text-xs sm:text-sm leading-none tracking-tight">
+                BANK LTD
+              </div>
+              <div className="text-slate-600 text-[10px] sm:text-xs leading-none mt-0.5">
                 Since 1984
               </div>
             </div>
@@ -169,17 +172,25 @@ export default function Navigation() {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-8">
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 flex items-center justify-center">
+                    <div className="w-14 h-14 flex items-center justify-center">
                       <Image
                         src="/imgs/logo.jpg"
                         alt="Sadhana Sahakari Bank Logo"
-                        width={48}
-                        height={48}
+                        width={56}
+                        height={56}
                         className="rounded-lg"
                       />
                     </div>
-                    <div>
-                      <div className="font-bold text-black text-lg">SSB Ltd Since 1984</div>
+                    <div className="max-w-[180px]">
+                      <div className="font-bold text-black text-sm leading-none tracking-tight">
+                        SADHANA SAHAKARI
+                      </div>
+                      <div className="font-bold text-black text-sm leading-none tracking-tight">
+                        BANK LTD
+                      </div>
+                      <div className="text-slate-600 text-xs leading-none mt-0.5">
+                        Since 1984
+                      </div>
                     </div>
                   </div>
                   <button
